@@ -7,6 +7,6 @@ import java.util.UUID;
 
 public interface CustomerService {
 
-    List<Customer> listAllCustomers();
+    List<Customer> getAllCustomers();
     Customer getCustomerById(UUID id);
 }

@@ -20,7 +20,7 @@ public class CustomerController {
     private final CustomerService customerService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Customer> listAllCustomers() { return customerService.listAllCustomers(); }
+    public List<Customer> listAllCustomers() { return customerService.getAllCustomers(); }
 
     @RequestMapping(value = "{customerId}", method = RequestMethod.GET)
     public Customer getCustomerById(@PathVariable("customerId") UUID id) { return customerService.getCustomerById(id); }
